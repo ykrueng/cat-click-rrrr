@@ -6,6 +6,48 @@
     <link rel="stylesheet" href="css/stles.css">
   </head>
   <body>
+    <!-- Header  -->
+    <div class = container>
+    <div class='head'>
+      <h1>Cat Click Rrrr</h1>
+      <p>The Ultimate Cat Clicking Exercise</p>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!--  Cats menu  -->
+      <div class='list-container'>
+        <ul id='cat-list'></ul>
+      </div>
+      <!-- Cat detail -->
+      <div class="cat-container">
+        <div id="cat-image"></div>
+        <div id="cat-name"></div>
+        <div id="cat-click-count"></div>
+      </div>
+      <!-- Admin tool -->
+      <div class="admin-container">
+        <button id="admin-button">Admin</button>
+        <div id="admin-form" target="_parent">
+          <div>
+            <label>Name: </label>
+            <input type="text" id="input-name"/>
+          </div>
+          <div>
+            <label>Image: </label>
+            <input type="text" id="input-image"/>
+          </div>
+          <div>
+            <label>Click Count: </label>
+            <input type="text" id="input-click-count"/>
+          </div>
+          <button id="cancel-button">Cancel</button>
+          <button id="update-button">Update</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
