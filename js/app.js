@@ -133,7 +133,8 @@ var imgView = {
     const currentCat = controller.getCurrentCat();
     this.catImg.src = currentCat.img;
     this.catName.textContent = currentCat.name;
-    this.catCount.textContent = currentCat.clickCount;
+    this.catCount.textContent = currentCat.clickCount + ' click';
+    this.catCount.textContent += currentCat.clickCount > 1 ? 's' : '';
   }
 };
 

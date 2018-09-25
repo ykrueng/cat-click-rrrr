@@ -8,45 +8,51 @@
   <body>
     <!-- Header  -->
     <div class = container>
-    <div class='head'>
-      <h1>Cat Click Rrrr</h1>
-      <p>The Ultimate Cat Clicking Exercise</p>
-    </div>
+      <div class='head'>
+        <h1>Cat Click Rrrr</h1>
+        <p>The Ultimate Cat Clicking Exercise</p>
+      </div>
 
-    <!-- Content -->
-    <div class="content">
-      <!--  Cats menu  -->
-      <div class='list-container'>
-        <ul id='cat-list'></ul>
-      </div>
-      <!-- Cat detail -->
-      <div class="cat-container">
-        <div id="cat-image"></div>
-        <div id="cat-name"></div>
-        <div id="cat-click-count"></div>
-      </div>
-      <!-- Admin tool -->
-      <div class="admin-container">
-        <button id="admin-button">Admin</button>
-        <div id="admin-form" target="_parent">
-          <div>
-            <label>Name: </label>
-            <input type="text" id="input-name"/>
+      <!-- Content -->
+      <div class="content">
+        <div class="menu">
+          <!-- Cat detail -->
+          <div class="cat-container">
+            <div id="cat-image"></div>
+            <div class="cat-detail">
+              <h2 id="cat-name"></h2>
+              <h2 id="cat-click-count"></h2>
+            </div>
           </div>
-          <div>
-            <label>Image: </label>
-            <input type="text" id="input-image"/>
+          <!--  Cats menu  -->
+          <div class='list-container'>
+            <ul id='cat-list'></ul>
           </div>
-          <div>
-            <label>Click Count: </label>
-            <input type="text" id="input-click-count"/>
+        </div>
+          <!-- Admin tool -->
+        <div class="admin-container">
+          <div id="admin-button">Admin</div>
+          <div id="admin-form" target="_parent">
+            <div class="admin-input name-input">
+              <label>Name: </label>
+              <input type="text" id="input-name"/>
+            </div>
+            <div class="admin-input">
+              <label>Image: </label>
+              <input type="text" id="input-image"/>
+            </div>
+            <div class="admin-input">
+              <label>Click Count: </label>
+              <input type="text" id="input-click-count"/>
+            </div>
+            <div id="cancel-button">Hide</div>
+            <div id="update-button">Update</div>
           </div>
-          <button id="cancel-button">Cancel</button>
-          <button id="update-button">Update</button>
         </div>
       </div>
-    </div>
-    <div class="footer">
+      <div class="footer">
+          By: YKrueng 2018
+      </div>
     </div>
     <script src="js/app.js"></script>
   </body>

@@ -3,3 +3,145 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #BEB9B5; /* Red */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  background-color: #C25B56;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cat-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list-container {
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li,
+#admin-button,
+#cancel-button,
+#update-button {
+  background-color: #525564;
+  width: 120px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 2.5px 20px;
+  text-align: center;
+}
+
+li {
+  background-color: #C25B56;
+}
+
+#admin-button,
+#update-button {
+  margin-bottom: 0px;
+}
+
+.admin-container {
+  background-color: #74828F;
+  border-radius: 5px;
+  margin: 10px 0px 20px 0px;
+}
+
+.admin-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 0px 5px;
+}
+
+.name-input {
+  margin-top: 5px;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #C25B56;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: right;
+  font-size: .75em;
+  margin-top: 10px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .content {
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cat-container {
+    padding-bottom: 10px;
+  }
+
+  .list-container {
+    padding-right: 20px;
+  }
+
+  ul {
+    justify-content: center;
+  }
+
+  li,
+  #admin-button,
+  #cancel-button,
+  #update-button {
+    width: 300px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+}
