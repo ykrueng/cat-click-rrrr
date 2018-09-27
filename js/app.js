@@ -60,12 +60,13 @@
         alert('Nothing to update!');
       } else if (!adminView.nameInput.value ||
                  !adminView.imageInput.value ||
-                 !adminView.clickCountInput.value) {
+                 (!Number(adminView.clickCountInput.value) &&
+                  Number(adminView.clickCountInput.value) !== 0)) {
         alert('Invalid input');
       } else {
         model.currentCat.name = adminView.nameInput.value;
         model.currentCat.img = adminView.imageInput.value;
-        model.currentCat.clickCount = adminView.clickCountInput.value;
+        model.currentCat.clickCount = Number(adminView.clickCountInput.value);
         listView.render(); // render cat list to reflect change
         imgView.render(); // render cat image to reflect change
       }
